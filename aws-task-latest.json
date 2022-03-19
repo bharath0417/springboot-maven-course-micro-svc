@@ -1,0 +1,22 @@
+{
+    "family": "aws-task-latest",
+    "requiresCompatibilities": [
+        "FARGATE"
+    ]
+    "containerDefinitions" [
+        {
+            "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
+            "name": "aws-task-latest",
+            "cpu": 10,
+            "memory": 256,
+            "essential": true,
+            "networkMode": "awsvpc",
+            "portMappings": [
+                {
+		    "containerPort": 8088
+                }
+            ]
+        }
+    ]
+}
+© 2022 GitHub, Inc.
