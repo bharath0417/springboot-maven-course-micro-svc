@@ -7,7 +7,7 @@
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
             "name": "aws-task-latest",
-            "cpu": 10,
+            "cpu": 100,
             "memory": 256,
             "essential": true,
             "networkMode": "awsvpc",
